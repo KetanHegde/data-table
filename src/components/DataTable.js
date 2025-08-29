@@ -110,7 +110,7 @@ const DataTable = ({
         const lines = text.split("\n").filter((line) => line.trim() !== "");
 
         if (lines.length === 0) {
-          toast("Your file is empty", {
+          toast("Uploaded file is empty", {
             icon: "❌",
           });
           return;
@@ -180,7 +180,7 @@ const DataTable = ({
           const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
           if (jsonData.length === 0) {
-            toast("Your file is empty", {
+            toast("Uploaded file is empty", {
               icon: "❌",
             });
             return;
